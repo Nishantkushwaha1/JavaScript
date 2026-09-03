@@ -9,6 +9,7 @@ let temp = null;
 
 // Data Types: 
 
+// ***Primitive***
 // number
 // bigint
 // string ---> ""
@@ -17,6 +18,7 @@ let temp = null;
 // undefined
 // symbol ---> unique
 
+
 console.log(typeof username);           // string
 console.log(typeof age);                // number
 console.log(typeof isLoggedIn);         // boolean
@@ -24,3 +26,14 @@ console.log(typeof state);              // undefined
 console.log(typeof temp);               // object
 
 
+// ***Non- Primitive***
+// Array
+// Objects
+// Function
+
+
+
+// ------------------Stack and Heap Memory------------------------
+
+// Stack -------> Primitive ------> Copy
+// Heap  -------> Non - Primitive -----> Reference 
