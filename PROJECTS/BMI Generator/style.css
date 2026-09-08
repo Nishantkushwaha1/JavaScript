@@ -1,0 +1,61 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(231, 209, 209);
+}
+
+.outer{
+    border: 5px solid rgb(95, 0, 0);
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 30px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.height{
+    text-align: center;
+    margin: 30px;
+    font-size: 25px;
+}
+
+.weight{
+    text-align: center;
+    margin: 30px;
+    font-size: 25px;
+}
+
+input{
+    padding: 8px;
+}
+
+.button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.result{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    color: rgb(128, 6, 6);
+}
+
+.guide{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 20px;
+}
