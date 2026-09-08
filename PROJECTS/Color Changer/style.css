@@ -1,0 +1,48 @@
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.canvas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    border: 5px solid black;
+    margin: 10px;
+}
+
+#grey {
+    background-color: gray;
+}
+
+#white {
+    background-color: white;
+}
+
+#pink {
+    background-color: pink;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
