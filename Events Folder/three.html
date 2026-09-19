@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+
+<body>
+    <h1>I am Nishant Kushwaha</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <script>
+
+        let count;
+
+        let start = document.querySelector('#start')
+
+        start.addEventListener('click', function () {
+            count = setInterval(function () {
+                console.log("I am Nishant Kushwaha")
+            }, 1000)
+        })
+
+
+        let stop = document.querySelector('#stop')
+
+        stop.addEventListener('click', function () {
+            clearInterval(count)
+            console.log("Stopped")
+        })
+
+    </script>
+</body>
+
+</html>
