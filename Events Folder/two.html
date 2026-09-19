@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1>I am Nishant Kushwaha</h1>
+    <button id="bnt">Stop</button>
+    
+
+    <script>
+        // setTimeout(function(){
+        //     console.log("Nishant ");
+        // }, 2000)
+        // It print the name after 2 second.
+
+        //also written as-->
+        // let sayMyName = function(){
+        //     console.log("Nishant ");
+        // }
+        // setTimeout(sayMyName, 2000)
+
+
+        let changeText = function(){
+            document.querySelector('h1').innerHTML = " I am Vansh Varshney"
+        }
+        let change = setTimeout(changeText, 2000)
+        //After 2 sec the text change.
+
+        // clearTimeout(change)
+        //When we apply clearTimout() it will restrict to change the text.
+
+        let btn = document.querySelector('#btn')
+        addEventListener('click', function(){
+            clearTimeout(change)
+            console.log('STOPPED')
+        })
+
+
+    </script>
+</body>
+</html>
