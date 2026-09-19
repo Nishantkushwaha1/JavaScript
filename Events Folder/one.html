@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+
+<body>
+
+    <div id="images">
+
+        <ul>
+            <li><img width="200px" id="sunflower" src="sunflower.jpg" alt=""></li>
+            <li><img width="200px" id="german" src="german shephard.jpg" alt=""></li>
+            <li><img width="200px" id="mountain" src="mountain.jpg" alt=""></li>
+            <li><img width="200px" id="chair" src="chair.jpg" alt=""></li>
+        </ul>
+    </div>
+
+    <!-- Method- 1: onclick="alert('sunflower') -->
+
+
+    <script>
+        // Method 2:
+
+        // const sunflower = document.querySelector('#sunflower')
+        // sunflower.onclick = function(){
+        //     alert('sunflower clicked')
+        // }
+
+
+        // Method- 3:
+
+        // const images = document.querySelector('#images')
+        // images.addEventListener('click', function(){
+        //     console.log("You clicked inside ul")
+        // }, false)
+
+        // const sunflower = document.querySelector('#sunflower')
+        // sunflower.addEventListener('click', function(){
+        //     console.log("Sunflower clicked")
+        // }, false)
+
+
+        // if false and false or default then it print- 
+        // Sunflower clicked
+        // You clicked inside ul
+
+        // if true and true then it print- 
+        // You clicked insitrue
+        // Sunflower clicked
+
+
+        // e.stopPropagation()    --->  stop the next propagation.
+
+
+        const images = document.querySelector('#images')
+        images.addEventListener('click', function (e) {
+            console.log(e.target.parentNode)
+            console.log(e.target.tagName)
+
+            if (e.target.tagName === 'IMG') {
+                let removeIt = e.target.parentNode
+                removeIt.remove()
+            }
+
+        }, false)
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
