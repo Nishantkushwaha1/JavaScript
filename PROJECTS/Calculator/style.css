@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(66, 63, 63);
+}
+
+.container{
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(154, 144, 144);
+    width: 400px;
+    border-radius: 20px;
+    margin: 40px auto;
+    padding: 30px;
+    font-weight: bolder;
+}
+
+.AC, .seven, .four, .one, .double_zero {
+    display: flex;
+    gap: 20px;
+    padding: 5px;
+}
+
+input{
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: white;
+    border: none;
+    background: transparent;
+    text-align: right;
+}
+
+input::placeholder{
+    color: white;
+}
+
+.circle{
+    background-color: rgb(56, 54, 54);
+    font-size: large;
+    color: white;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    padding: 20px;
+    cursor: pointer;
+}
+
+#equalto{
+    background-color: orange;
+    font-size: 30px;
+}
+
+#all_clear, #delete, #percent, #division, #multiply, #minus,  #sum, #dot{
+    color: rgb(115, 212, 115);
+}
+
